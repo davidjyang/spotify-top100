@@ -11,7 +11,7 @@ response = requests.get("http://www.billboard.com/charts/hot-100/" + date)
 
 soup = BeautifulSoup(response.text, 'html.parser')
 song_names_spans = soup.select(selector="li h3", class_="c-title")
-song_names = [song.getText().strip() for song in song_names_spans[:100]]
+song_names = [song.getText().strip() for song in song_names_spans[:101]]
 
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
