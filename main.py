@@ -18,7 +18,7 @@ sp = spotipy.Spotify(
         scope="playlist-modify-private",
         redirect_uri="http://localhost:8000",
         client_id="a4713afc21d14d848c03254e8cf8ae26", 
-        client_secret="945e78a2afad4727848992daa8d5a27e",
+        client_secret="" # CLIENT SECRET! removed mine for upload to github
         show_dialog=True,
         cache_path="token.txt"
     )
